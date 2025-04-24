@@ -1,0 +1,42 @@
+---
+import BaseLayout from '/src/layouts/BaseLayout.astro';
+---
+<BaseLayout>
+  <div id="main" class="site-main container clr">
+        <div id="primary" class="content-area clr">
+      <section id="content" role="main" class="site-content  clr">
+        <div id="breadcrumbs"><h2 class="element-invisible">您在這裡</h2><nav class="breadcrumb"><a href="/">首頁</a> » <a href="/node/4" title="">禪修</a> » 禪修入門</nav></div>                        <div id="content-wrap">
+                    <h1 class="page-title">禪修入門</h1>                                                  <div class="region region-content">
+  <div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+                        <span property="dc:title" content="禪修入門" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+      
+    
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><img alt="" src="./node_2_禪修入門 _ 休斯頓禪修中心_files/large_meditation-leaf.jpg" style="float:right; height:180px; width:180px">恭喜！ 現在你決定進一步探索內觀禪修，我們希望在你初學走路的前幾步引導你。我們會推薦你閱讀、給你鼓勵和提供其他的資源，以協助你探索內在世界的新旅程。你會 從其他老參的修行經驗和所學的課程中得到幫助，他們很樂意與你分享他們深刻的體會。就看你怎麼利用這些資訊，修習、修習、再修習！</p>
+
+<p>　　作為初學者，將你的修行建立在良好的基礎上極為重要。良好的基礎意味著吸收正確的“養分”滋養你的修行，你的修行才會有成效，然後才會對你透過<strong>親證</strong>學到的東西更有信心。</p>
+
+<p>　　同時，你必須了解要培育禪修的幼苗並令 其成長茁壯並非易事，需有堅定不移的意志才能跨越禪修艱難的初始階段。禪修入門階段是最難的，因為此時你對修行沒有足夠的信仰、信心或瞭解可以幫助和鼓勵 你不改初衷，也沒有直接經驗可以參考。在入門階段你可以參考那些修行走在你前頭的人。</p>
+
+<p>　　故我們要開始入門的初階禪修。在這一階段我們會幫助你打下基礎，你的禪修將建立其上。第一階段要“<a href="/node/7">建立信仰和信心</a>”。在消化了初階的資訊之後，我們會進展到第二階“<a href="/node/13">培養正確的態度</a>”，最後是初學者第三階“<a href="/node/10">開始實修</a>”。一旦你掌握了這些概念，就做好了投入個人修行的充分準備，這將讓你擁有健康且豐碩的成果。</p>
+
+<p>　　<a href="/node/9">再次叮嚀</a></p>
+</div></div></div>  </div>
+
+      <footer>
+          </footer>
+  
+    </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+        </div>
+      </section>
+
+          </div>
+  </div>
+</BaseLayout>
