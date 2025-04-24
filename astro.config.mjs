@@ -6,6 +6,6 @@ const base = '/hmc/'; // Or '/your-base'
 console.log(`--- Using base: ${base} ---`);   // Add this line
 
 export default defineConfig({
-  site: 'https://dareonion.github.io',
-  base: base,
+    site: 'https://dareonion.github.io',
+    base: base,
 });
