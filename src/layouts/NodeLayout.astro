@@ -1,0 +1,30 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+const { title } = Astro.props;
+---
+<BaseLayout title={title}>
+<div id="main" class="site-main container clr">
+  <div id="primary" class="content-area clr">
+    <section id="content" role="main" class="site-content  clr">
+      <div id="breadcrumbs"><h2 class="element-invisible">您在這裡</h2><nav class="breadcrumb"><a href="/">首頁</a> » {title}</nav></div>
+      <div id="content-wrap">
+        <h1 class="page-title">{title}</h1>
+        <div class="region region-content">
+          <div id="block-system-main" class="block block-system">
+            <div class="content">
+              <span property="dc:title" content={title} class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
+              <div class="content"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded">
+
+                  <slot />
+
+                </div></div></div></div>
+            </div>
+          </div> <!-- /.block -->
+        </div>
+        <!-- /.region -->
+      </div>
+    </section>
+
+  </div>
+</div>
+</BaseLayout>
