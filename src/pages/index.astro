@@ -2,71 +2,99 @@
 import BaseLayout from '/src/layouts/BaseLayout.astro';
 ---
 <BaseLayout>
-    <div id="main" class="site-main container clr">
-      <div id="primary" class="content-area clr">
-	<section id="content" role="main" class="site-content left-content clr">
-          <div id="content-wrap">
-            <div class="region region-content">
-	      <div id="block-system-main" class="block block-system">
+  <div id="homepage-slider-wrap" class="clr flexslider-container">
+    <div id="homepage-slider" class="flexslider">
+      <ul class="slides clr">
+        <li class="homepage-slider-slide">
+          <a href="/node/1">
+            <div class="homepage-slide-inner container">
+            </div>
+            <img src="./Houston Meditation Center _ Namo Tassa Bhagavato Arahato Sammasambuddhassa_files/slide-image-1.jpg">
+          </a>
+        </li>
+        <li class="homepage-slider-slide">
+          <a href="/node/2">
+            <div class="homepage-slide-inner container">
+            </div>
+            <img src="./Houston Meditation Center _ Namo Tassa Bhagavato Arahato Sammasambuddhassa_files/slide-image-2.jpg">
+          </a>
+        </li>
+        <li class="homepage-slider-slide">
+          <a href="node/3">
+            <div class="homepage-slide-inner container">
+            </div>
+            <img src="./Houston Meditation Center _ Namo Tassa Bhagavato Arahato Sammasambuddhassa_files/slide-image-3.jpg">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-		
-		<div class="content">
-		  <article id="node-1" class="node node-article node-promoted node-teaser clearfix" about="/?q=zh-hant/node/1" typeof="sioc:Item foaf:Document">
-		    <header>
-                      <h2 class="title"><a href="/node/1">歡迎！</a></h2>
-		      <span property="dc:title" content="歡迎！" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
-		      
-		    </header>
-		    
-		    <div class="content">
-		      <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><img alt="" src="/large_meditation-1.jpg" style="float:left; margin-right:5px; padding:5px">我們很高興看到您的到訪，希望您能從我們這裏所提供的工具、指南和資料中受益。如果您是初學，我們的目的是幫助您建立堅實的基礎，以便進行有成效的禪修；如果您已經熟悉了禪修的基本知識，我們希望能給您鼓勵和提供有深度的資訊及內行的指導，幫助強化您的修行和技巧。無論您的目標為何，都希望我們這個網站的資訊對您有幫助。</p>
+  <div id="main" class="site-main container clr">
+    <div id="primary" class="content-area clr">
+      <section id="content" role="main" class="site-content left-content clr">
+        <div id="content-wrap">
+          <div class="region region-content">
+	    <div id="block-system-main" class="block block-system">
+
+
+	      <div class="content">
+		<article id="node-1" class="node node-article node-promoted node-teaser clearfix" about="/node/1" typeof="sioc:Item foaf:Document">
+		  <header>
+                    <h2 class="title"><a href="/node/1">歡迎！</a></h2>
+		    <span property="dc:title" content="歡迎！" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+
+		  </header>
+
+		  <div class="content">
+		    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><img alt="" src="large_meditation-1.jpg" style="float:left; margin-right:5px; padding:5px">我們很高興看到您的到訪，希望您能從我們這裏所提供的工具、指南和資料中受益。如果您是初學，我們的目的是幫助您建立堅實的基礎，以便進行有成效的禪修；如果您已經熟悉了禪修的基本知識，我們希望能給您鼓勵和提供有深度的資訊及內行的指導，幫助強化您的修行和技巧。無論您的目標為何，都希望我們這個網站的資訊對您有幫助。</p>
 		    </div></div></div>  </div>
 
-		    <footer>
-		      <ul class="links inline"><li class="node-readmore first last"><a href="/node/1" rel="tag" title="歡迎！">閱讀更多<span class="element-invisible">關於歡迎！</span></a></li>
+		  <footer>
+		    <ul class="links inline"><li class="node-readmore first last"><a href="/node/1" rel="tag" title="歡迎！">閱讀更多<span class="element-invisible">關於歡迎！</span></a></li>
 		    </ul>    </footer>
-		    
-		  </article> <!-- /.node -->
-		</div>
-		
-	      </div> <!-- /.block -->
-	    </div>
-	    <!-- /.region -->
-          </div>
-	</section>
 
-        <aside id="secondary" class="sidebar-container" role="complementary">
-          <div class="region region-sidebar-first">
-	    <div id="block-locale-language" class="block block-locale">
-
-              <h2><span>語言</span></h2>
-	      
-	      <div class="content">
-		<ul class="language-switcher-locale-url"><li class="zh-hans first"><a href="#" class="language-link" xml:lang="zh-hans">简体中文</a></li>
-		  <li class="zh-hant active"><a href="/" class="language-link active" xml:lang="zh-hant">繁體中文</a></li>
-		  <li class="en last"><a href="#" class="language-link" xml:lang="en">English</a></li>
-	      </ul>  </div>
-	      
-	    </div> <!-- /.block -->
-	    <div id="block-block-2" class="block block-block">
-
-              <h2><span>最新動態</span></h2>
-	      
-	      <div class="content">
-		<p>請去<a href="/node/6">關於我們</a>查看HMC的最新聯絡方式</p>
-
-		<p><u>名稱更換</u></p>
-
-		<p>即日起休斯頓禪修中心更名為休斯頓禪修社區，英文縮寫不變，仍為HMC。</p>
-
-		<p>為了幫助我們理解和服務禪修社區的需求，請點擊此<a href="https://docs.google.com/forms/d/1km8Y9aYUepTuOC5dOgPab6odCxKdFH9GA1MXNMPNCGs/viewform?ts=5f21dcfa&amp;gxids=7628&amp;edit_requested=true" target="_blank">鏈接</a>以完成簡短的調查。</p>
-
+		</article> <!-- /.node -->
 	      </div>
-	      
+
 	    </div> <!-- /.block -->
 	  </div>
 	  <!-- /.region -->
-        </aside> 
-      </div>
+        </div>
+      </section>
+
+      <aside id="secondary" class="sidebar-container" role="complementary">
+        <div class="region region-sidebar-first">
+	  <div id="block-locale-language" class="block block-locale">
+
+            <h2><span>語言</span></h2>
+
+	    <div class="content">
+	      <ul class="language-switcher-locale-url"><li class="zh-hans first"><a href="#" class="language-link" xml:lang="zh-hans">简体中文</a></li>
+		<li class="zh-hant active"><a href="/" class="language-link active" xml:lang="zh-hant">繁體中文</a></li>
+		<li class="en last"><a href="#" class="language-link" xml:lang="en">English</a></li>
+	      </ul>  </div>
+
+	  </div> <!-- /.block -->
+	  <div id="block-block-2" class="block block-block">
+
+            <h2><span>最新動態</span></h2>
+
+	    <div class="content">
+	      <p>請去<a href="/node/6">關於我們</a>查看HMC的最新聯絡方式</p>
+
+	      <p><u>名稱更換</u></p>
+
+	      <p>即日起休斯頓禪修中心更名為休斯頓禪修社區，英文縮寫不變，仍為HMC。</p>
+
+	      <p>為了幫助我們理解和服務禪修社區的需求，請點擊此<a href="https://docs.google.com/forms/d/1km8Y9aYUepTuOC5dOgPab6odCxKdFH9GA1MXNMPNCGs/viewform?ts=5f21dcfa&amp;gxids=7628&amp;edit_requested=true" target="_blank">鏈接</a>以完成簡短的調查。</p>
+
+	    </div>
+
+	  </div> <!-- /.block -->
+	</div>
+	<!-- /.region -->
+      </aside>
     </div>
+  </div>
 </BaseLayout>
