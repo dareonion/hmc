@@ -9,6 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@fontsource-variable/noto-serif-tc": "^5.2.5",
+    "@fontsource/noto-serif-tc": "^5.2.5",
     "astro": "^5.7.5"
   }
 }

@@ -1,0 +1,92 @@
+/* Apply to the main container holding the article */
+.article-content {
+  /* --- Font Selection (Choose ONE stack or adapt) --- */
+
+  /* Option 1: Serif (Ming/Song) - Often preferred for long traditional text */
+  /* font-family: "Noto Serif TC", /\* Google Font - Recommended *\/ */
+  /*              "PingFang TC",     /\* macOS (newer) *\/ */
+  /*              "LiHei Pro",       /\* macOS (older) *\/ */
+  /*              "Microsoft JhengHei", /\* Windows Vista+ *\/ */
+  /*              PMingLiU,          /\* Windows (older) *\/ */
+  /*              serif;             /\* Generic fallback *\/ */
+
+  /* Option 2: Sans-serif (Hei) - Modern alternative */
+  font-family: "Noto Sans TC",  /* Google Font - Recommended */
+               "PingFang TC",     /* macOS (newer) */
+               "Helvetica Neue",  /* macOS (may need TC variant if available) */
+               "Microsoft JhengHei", /* Windows Vista+ */
+               "Heiti TC",        /* iOS */
+               sans-serif;         /* Generic fallback */
+
+  /* --- Core Readability Settings --- */
+
+  /* Font Size: Slightly larger than typical English defaults */
+  font-size: 1.15rem; /* Approx 18.4px if base is 16px. Adjust as needed. */
+
+  /* Line Height: Generous spacing is CRUCIAL for Chinese */
+  line-height: 1.8; /* Unitless value scales with font-size. 1.7 to 1.9 is a good range. */
+
+  /* Color & Contrast: Dark grey on light background is often easier on eyes */
+  color: #333; /* Dark grey text */
+  background-color: #fdfdfd; /* Slightly off-white background */
+
+  /* Layout & Spacing */
+  max-width: 40em; /* Limits line length. Approx 35-45 characters depending on font. Adjust to taste. */
+  margin: 2rem auto; /* Centers the content block with top/bottom margin */
+  padding: 1rem 2rem; /* Padding inside the container (optional) */
+
+  /* Text Alignment: Left is often better for web readability than justify */
+  text-align: left;
+
+  /* Optional: Justification (use with caution, test carefully) */
+  /* text-align: justify; */
+  /* text-justify: inter-ideograph; /* Helps distribute space more evenly for CJK */
+
+  /* Font Rendering Enhancements (Optional) */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Paragraph Styling --- */
+.article-content p {
+  /* Spacing between paragraphs */
+  margin-top: 0;
+  margin-bottom: 1.2em; /* Creates clear visual separation */
+
+  /* Optional: Traditional First-Line Indentation */
+  /* text-indent: 2em; */ /* Adds a two-character indent */
+  /* If using indent, you might reduce margin-bottom slightly, e.g., 0.8em */
+}
+
+/* --- Heading Styling (Example) --- */
+.article-content h1,
+.article-content h2,
+.article-content h3 {
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; /* Maybe use Sans-serif for headings */
+  color: #111;
+  line-height: 1.4;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+
+.article-content h1 { font-size: 2.2rem; }
+.article-content h2 { font-size: 1.8rem; }
+.article-content h3 { font-size: 1.4rem; }
+
+/* --- Links --- */
+.article-content a {
+  color: #0056b3; /* Standard link blue */
+  text-decoration: none; /* Optional: remove underline */
+  border-bottom: 1px solid #0056b3; /* Add bottom border instead */
+  padding-bottom: 1px;
+}
+
+.article-content a:hover,
+.article-content a:focus {
+  color: #003d80;
+  border-bottom-color: #003d80;
+}
+
+/* --- HTML Language Attribute --- */
+/* IMPORTANT: Make sure your HTML tag has the correct language attribute! */
+/* Example: <html lang="zh-Hant"> or <html lang="zh-TW"> or <html lang="zh-HK"> */
