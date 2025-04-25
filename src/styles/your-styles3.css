@@ -1,0 +1,151 @@
+/* --- Basic Resets & Global --- */
+* {
+  box-sizing: border-box; /* More intuitive layout calculations */
+}
+
+body {
+  margin: 0; /* Remove default browser margin */
+  font-family: sans-serif; /* Set a base sans-serif for elements outside article */
+  background-color: #f8f9fa; /* Light background for the whole page */
+  color: #333; /* Default text color */
+}
+
+/* --- Site Header --- */
+.site-header {
+  background-color: #ffffff; /* White background */
+  border-bottom: 1px solid #e0e0e0; /* Subtle separator line */
+  padding: 0.75rem 1.5rem; /* Padding top/bottom and left/right */
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; /* Sans-serif for UI */
+}
+
+.header-container {
+  max-width: 1100px; /* Limit header content width */
+  margin: 0 auto; /* Center header content */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space title and nav apart */
+  align-items: center; /* Vertically align items */
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.site-title a {
+  text-decoration: none;
+  color: #212529; /* Dark color for title */
+}
+.site-title a:hover {
+  color: #0056b3;
+}
+
+
+/* --- Main Navigation --- */
+.main-navigation ul {
+  list-style: none; /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arrange links horizontally */
+  gap: 1.25rem; /* Spacing between nav items */
+}
+
+.main-navigation li {
+  margin: 0;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: #555; /* Medium grey for nav links */
+  font-size: 1rem;
+  padding: 0.5rem 0; /* Add some clickable vertical space */
+  border-bottom: 2px solid transparent; /* Prepare for hover effect */
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #0056b3; /* Link blue on hover */
+  border-bottom-color: #0056b3; /* Underline effect on hover */
+}
+
+
+/* --- Main Content Area --- */
+main {
+  /* Add some vertical space if header/footer are fixed, otherwise */
+  /* the margin on .article-content usually handles spacing */
+  /* padding-top: 1rem; */ /* Example if needed */
+  /* padding-bottom: 1rem; */ /* Example if needed */
+}
+
+
+/* --- Article Content (Previous CSS - slightly adapted) --- */
+.article-content {
+  /* Option 1: Serif (Ming/Song) */
+  /* font-family: "Noto Serif TC", "PingFang TC", "LiHei Pro", "Microsoft JhengHei", PMingLiU, serif; */
+
+  /* Option 2: Sans-serif (Hei) */
+  font-family: "Noto Sans TC", "PingFang TC", "Helvetica Neue", "Microsoft JhengHei", "Heiti TC", sans-serif;
+
+  font-size: 1.15rem; /* Approx 18.4px */
+  line-height: 1.8;
+  color: #333;
+  background-color: #ffffff; /* White background for article contrasts page bg */
+  max-width: 40em; /* Approx 650-750px depending on font/size */
+  margin: 3rem auto; /* More top/bottom margin to separate from header/footer */
+  padding: 2rem 2.5rem; /* Generous padding inside article */
+  text-align: left;
+  border: 1px solid #e0e0e0; /* Optional: Subtle border for the article box */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Optional: Subtle shadow */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.article-content p {
+  margin-top: 0;
+  margin-bottom: 1.2em;
+  /* text-indent: 2em; */ /* Optional indent */
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3 {
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; /* Sans-serif for headings */
+  color: #111;
+  line-height: 1.4;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+}
+/* Adjusted Heading Sizes slightly */
+.article-content h1 { font-size: 2.0rem; margin-top: 0; } /* First heading no top margin */
+.article-content h2 { font-size: 1.6rem; }
+.article-content h3 { font-size: 1.3rem; }
+
+.article-content a {
+  color: #0056b3;
+  text-decoration: none;
+  border-bottom: 1px solid #a0c7e4; /* Lighter border for inline links */
+  padding-bottom: 1px;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.article-content a:hover,
+.article-content a:focus {
+  color: #003d80;
+  border-bottom-color: #003d80;
+}
+
+
+/* --- Site Footer --- */
+.site-footer {
+  background-color: #e9ecef; /* Light grey footer background */
+  color: #6c757d; /* Muted text color */
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem; /* Space above the footer */
+  font-size: 0.9rem;
+  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; /* Sans-serif for UI */
+}
+
+.site-footer p {
+  margin: 0;
+}

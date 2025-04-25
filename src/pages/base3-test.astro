@@ -1,0 +1,25 @@
+---
+// src/pages/base-test.astro
+---
+<html lang="en">
+<head>
+  <title>Base Test</title>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+</head>
+<body>
+  <h1>Base Path Test</h1>
+  <p>Configured base should be: {import.meta.env.BASE_URL}</p>
+
+  <h2>Test Link:</h2>
+  <a href="./another-page">Link to Another Page</a>
+
+  <h2>Test Image (place dummy.png in public/):</h2>
+  <img src="./dummy.png" alt="Test Dummy Image" width="50">
+
+  <hr>
+  <a href="./">Link to Root</a>
+</body>
+</html>
+
+<!-- Create src/pages/another-page.astro as well -->

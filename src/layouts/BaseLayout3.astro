@@ -1,0 +1,45 @@
+---
+const { title } = Astro.props;
+import '@fontsource/noto-sans-tc';
+import '../styles/your-styles3.css';
+---
+<!DOCTYPE html>
+<html lang="zh-Hant"> <!-- IMPORTANT: Set the language! -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>網站標題 - 文章標題</title>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <div class="site-title"><a href="/">網站名稱</a></div>
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="/">首頁</a></li>
+          <li><a href="/about">關於</a></li>
+          <li><a href="/archive">彙整</a></li>
+          <li><a href="/contact">聯絡</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="article-content">
+      <h1>文章主標題</h1>
+      <h2>副標題</h2>
+      <p>這是一個段落的範例文字。傳統中文的字符結構較為複雜，因此需要足夠的字體大小與行高才能確保良好的閱讀體驗。行長也應適中，避免過長導致視線追蹤困難。</p>
+      <p>第二個段落，展示段落間距的效果。適當的間距有助於區分不同的思緒區塊，讓文章結構更清晰。您可以選擇使用段落間距或是首行縮排（但通常不同時使用）。</p>
+      <h3>小節標題</h3>
+      <p>這裡是更多內文。請注意選擇的字體是否清晰地呈現所有筆劃，尤其是在較小的螢幕上。推薦使用像「Noto Serif TC」或「Noto Sans TC」這樣的網路字體，以確保跨平台的一致性。</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 您的網站名稱. 保留所有權利.</p>
+  </footer>
+
+</body>
+</html>
