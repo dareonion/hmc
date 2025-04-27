@@ -1,30 +1,44 @@
 ---
-import BaseLayout from "./BaseLayout.astro";
 const { title } = Astro.props;
+import '@fontsource/noto-sans-tc';
+import '../styles/your-styles3.css';
+const site_title = "休斯頓禪修社區";
+const base = import.meta.env.BASE_URL + (
+  import.meta.env.BASE_URL.endsWith('/') ? '' : '/');
 ---
-<BaseLayout title={title}>
-<div id="main" class="site-main container clr">
-  <div id="primary" class="content-area clr">
-    <section id="content" role="main" class="site-content  clr">
-      <div id="breadcrumbs"><h2 class="element-invisible">您在這裡</h2><nav class="breadcrumb"><a href="./">首頁</a> » {title}</nav></div>
-      <div id="content-wrap">
-        <h1 class="page-title">{title}</h1>
-        <div class="region region-content">
-          <div id="block-system-main" class="block block-system">
-            <div class="content">
-              <span property="dc:title" content={title} class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>  
-              <div class="content"><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded">
+<!DOCTYPE html>
+<html lang="zh-Hant"> <!-- IMPORTANT: Set the language! -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href={base} />
+  <title>{site_title} - {title}</title>
+</head>
+<body>
 
-                  <slot />
+  <header class="site-header">
+    <div class="header-container">
+      <div class="site-title"><a href="/">{site_title}</a></div>
+      <nav class="main-navigation">
+        <ul>
+          <li><a href="/">首頁</a></li>
+          <li><a href="/about">關於</a></li>
+          <li><a href="/archive">彙整</a></li>
+          <li><a href="/contact">聯絡</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-                </div></div></div></div>
-            </div>
-          </div> <!-- /.block -->
-        </div>
-        <!-- /.region -->
-      </div>
-    </section>
+  <main>
+    <article class="article-content">
+      <slot />
+    </article>
+  </main>
 
-  </div>
-</div>
-</BaseLayout>
+  <footer class="site-footer">
+    <p>© 2025 {site_title}. 保留所有權利.</p>
+  </footer>
+
+</body>
+</html>

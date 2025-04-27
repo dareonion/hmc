@@ -89,7 +89,7 @@ main {
   line-height: 1.8;
   color: #333;
   background-color: #ffffff; /* White background for article contrasts page bg */
-  max-width: 40em; /* Approx 650-750px depending on font/size */
+  max-width: 60em; /* Approx 650-750px depending on font/size */
   margin: 3rem auto; /* More top/bottom margin to separate from header/footer */
   padding: 2rem 2.5rem; /* Generous padding inside article */
   text-align: left;
